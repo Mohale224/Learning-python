@@ -160,15 +160,15 @@ print(greetings('French'))'''  # Output: Bonjour
 
 #Recursion
 
-# def factorial(num):
-#     call_stack = []
-#     if num == 1:
-#         return 1
-#     else:
-#         call_stack.append({'input': num})
-#         print('call stack:', call_stack)
-#         return num * factorial(num - 1)
-# factorial(5)
+'''def factorial(num):
+    call_stack = []
+    if num == 1:
+        return 1
+    else:
+        call_stack.append({'input': num})
+        print('call stack:', call_stack)
+        return num * factorial(num - 1)
+factorial(5)'''
 
 # how recursion works
 
@@ -185,35 +185,596 @@ print(EvenNums(8))  '''
 
 # Loops Using if else statements
 
-# average = 50  
-# mark = input('Enter your Student mark: ')
-# if int(mark) <= int(average):
-#     print('You failed')
+'''average = 50  
+mark = input('Enter your Student mark: ')
+if int(mark) <= int(average):
+    print('You failed')
 
-# elif int(mark) >= int(average) and int(mark) < 61:
-#     print('average pass')
+elif int(mark) >= int(average) and int(mark) < 61:
+    print('average pass')
 
-# elif int(mark) >= 61 and int(mark) <= 100:
-#     print('You Pass')
+elif int(mark) >= 61 and int(mark) <= 100:
+    print('You Pass')
 
-# else:
-#     print('Absent') 
+else:
+    print('Absent')''' 
 
-# a = 1
-# while a <= 50:
-#     if a % 2 == 0:
-#         print(a)
-#     a += 1
+'''a = 1
+while a <= 50:
+    if a % 2 == 0:
+        print(a)
+    a += 1'''
 
-# list = [1,5,2,3,4]
-# max_num = 0
-# for num in list:
-#     if num > max_num:
-#         max_num = num
+'''list = [1,5,2,3,4]
+max_num = 0
+for num in list:
+    if num > max_num:
+        max_num = num
 
-# print(max_num)
+print(max_num)'''
+
+# Using range
+
+'''for num in range (51):
+    if num % 5 == 0 and num > 4:
+        print(num)'''
 
 
-# for num in range (51):
-#     if num % 5 == 0 and num > 4:
-#         print(num)
+#Lambada Function
+'''greeting = lambda name: f'Hello, {name}!'
+print(greeting('Jody'))'''
+
+# Using map
+'''numbers = [1,2,3,4,5]
+squares = list(map(lambda x: x ** 2, numbers))
+print(squares)'''
+
+# Using filter
+'''numbers = [1,2,3,4,5,6,7,8,9,10]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)'''
+
+# Using sorted
+'''students = [
+    {'name': 'John', 'age': 20},
+    {'name': 'Jane', 'age': 22},
+    {'name': 'Bob', 'age': 19},
+    {'name': 'Alice', 'age': 21},
+    
+]
+sorted_students = sorted(students, key=lambda student: student['age'])
+print(sorted_students)'''
+
+# list of numbers
+
+'''numbers = [1,2,3,4,5,6,7,8,9,10]'''
+
+#Use a lamba function to filter out odd numbers
+
+'''evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+#Use a lamba function to square numbers
+
+squares = list(map(lambda x: x ** 2, numbers))
+
+#Print results
+
+print("Original numbers:", numbers)
+print("Even numbers:", evens)
+print("Squared numbers:", squares)'''
+
+'''x = lambda a, b, c: a + b + c
+print(x(5, 6, 2))'''
+
+'''def multiplier(n):
+    return lambda a: a * n
+
+doubler = multiplier(3)
+tripler = multiplier(4)
+
+
+print(doubler(11))
+print(tripler(12))'''
+
+# Class and Objects
+'''class Dog:
+    #this is a blank class
+    pass
+pepper = Dog()
+print(pepper)'''
+
+#Function
+
+# If we call the function without argument, it uses the default value:
+'''
+def my_function(country = "Norway"):
+    print("I am from " + country)
+
+my_function("Sweden")
+my_function("India")
+my_function()
+my_function("Brazil")
+'''
+'''def my_function(food):
+    for x in food:
+        print(x)
+
+fruits = ["apple", "banana", "cherry"]
+
+my_function(fruits)'''
+
+'''def average(a, b, c, d):
+    return (a + b + c + d) / 4
+
+result = average(1, 2, 13, 24)
+print("average:", int(result))
+
+range(3)
+'''
+
+    
+    
+
+#Recursion
+
+'''def tri_recursion(k):
+    if(k > 0):
+        a = k + tri_recursion(k - 1)'''
+'''        print(a)
+    else:
+        a = 0
+    return a
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
+'''
+'''class ClassSchedule:
+    def __init__(self,course ):
+        self.course = course
+
+first = ClassSchedule('Chemistry')
+print(first.course)'''
+#Doing my notes rn
+'''cars = ['Ford', 'Volvo', 'BMW', 'Toyota']
+a,b,c,d = cars
+print(a,b,c,d)'''
+
+x= "awesome"
+
+'''def myfunc():
+    print('Python is ' + x)
+myfunc()'''
+
+'''x = "awesome"
+def myfunc():
+    global x
+    x = "fantastic"
+myfunc()
+print('Python is ' + x)
+'''
+'''Int_value = 4
+print(Int_value)
+print(type(Int_value))
+
+print()
+
+float_value = float(Int_value)
+print(float_value)
+print(type(float_value))
+'''
+'''x = 5
+y = 2
+
+print("arithmetic operators(x+y):", (x+y))
+print("comparision operatord(x >= y) :", x >= y)
+print("logical operators(x == y and x > y):", x == y and x > y)'''
+
+'''score = 70
+
+if score >= 50:
+    print("You passed")
+elif score >= 60:
+    print("You passed with a distinction")
+else:
+    print("You failed")'''
+
+'''nums = [1,2,3,4,5]
+for nums in range(7):
+    print( nums + 0)'''
+
+'''a = 1
+while a < 8:
+    print(a)
+    a += 2 '''
+
+#Constructors __init__
+'''class ClassSchedule:
+    def __init__(self, course):  # Fixed the typo here
+        self.course = course
+
+first = ClassSchedule('Chemistry')
+print(first.course)'''
+
+# output = Chemistry
+
+#Destructor __del__
+
+# First example
+'''class ClassSchedule:
+    def __init__(self, course):
+        self.course = course
+    def __del__(self):
+        print('You successfully deleted the course')
+        
+first = ClassSchedule('Chemistry')
+print(first.course)
+del first'''
+
+# Second example
+'''class ClassSchedule:
+    def __init__(self, course):
+        self.course = course
+    def __del__(self):
+        print('You successfully deleted the course')
+
+sched = ClassSchedule('Mathematics')
+
+del sched'''
+# Arrays
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Toyota']
+x = cars[1]
+print(x)'''
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Toyota']
+cars[0] = 'Opel'
+print(cars)'''
+
+# The length of an array
+
+'''cars = ['Ford','BMW','Opel','Volvo']
+
+x = len(cars)
+print(x)'''
+
+# Looping through an array
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Toyota']
+for x in cars:
+    print(x)'''
+
+# Adding an item to an array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+cars.append('Toyota')
+print(cars)'''
+
+# Removing an item from an array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+cars.pop(0)
+print(cars)'''
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+cars.remove('Volvo')
+print(cars)'''
+
+
+#Question from Sir Tsiu
+#Write a python function takes input of the character,separated by commas and then sort them alphabetically 
+
+
+
+# Handling user input correctly
+# input_values = input("Enter a comma-separated list of characters: ")  # Keep it as a string
+# print("Sorted Characters:", characters(input_values))
+
+
+
+
+# Taking user input as a number and using match correctly
+# input_prime = int(input("Enter any number between 1 and 5: "))
+# match input_prime:
+#     case 2:
+#         print("Mohale")
+#     case 3:
+#         print("Bake")
+#     case 4:
+#         print("Toyota")
+#     case 5:
+#         print("Isuzu")
+#     case _:
+#         print("Invalid input")
+
+
+
+
+# Correct function call without arguments
+# print_primes_skip_7()
+
+            
+
+# input_str = "h, g, d, a, c, j, i, b, f, e,o,p,q,r,s,t,u,v,w,x,y,z"
+# sorted_str = characters(input_str)
+# print(sorted_str)
+
+#Create a function isLongerThan(S) that returns true if the given string has more than 5 characters, otherwise false'''.
+'''def isLongerThan(S):
+    return len(S) > 5'''
+
+
+
+
+#Create a function that prime numbers from 1 to 50. The program should skip all the multiples of 7
+''''def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def print_primes_skip_7():
+    for num in range(1, 51):
+        if is_prime(num) and num % 7 != 0:
+            print(num, end=" ")
+
+print_primes_skip_7()'''
+
+
+#Create a function that prime numbers from 1 to 50. The program should skip all the multiples of 7
+
+'''for num in range(1, 51):
+    if num % 7 == 0:
+        print(num)
+    continue
+else:
+    print(num)'''
+
+#Create a function that uses a match case to print the day of the week based on the user input e.g. if the user enters 1 the program should print “ The day is monday”
+
+'''def day_of_week(day): # function definition
+    match day:
+        case 1:
+            print("Monday")
+        case 2:
+            print("Tuesday")
+        case 3:
+            print("Wednesday")
+        case 4:
+            print("Thursday")
+        case 5:
+            print("Friday")
+        case 6:
+            print("Saturday")
+        case 7:
+            print("Sunday")
+        case _:
+            print("Invalid day")
+input_day = int(input("Enter any number of the day between 1 and 7: "))  
+day_of_week(input_day)''' # function call
+
+'''def top_three(cars):
+    match cars:
+        case 1:
+            print("Ford")
+        case 2:
+            print("Toyota")
+        case 3:
+            print("Isuzu")
+input_cars = int(input("Enter any number between 1 and 3 to choose a car: "))
+top_three(input_cars)'''
+
+
+#Create a function that arranges the given charaters in alphabetical order and returns them sorted alphabetically and check if the value is less than 5 characters long and return true if it is and false if it is not   
+'''def characters(input_str):
+    chars = input_str.split(",")  
+    sorted_chars = sorted([char.strip() for char in chars])  
+    return ", ".join(sorted_chars)
+
+
+def isLongerThan(S):
+    return len(S) > 5
+
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True  # 2 is the only even prime number
+    if n % 2 == 0:
+        return False  # Exclude other even numbers
+    for i in range(3, int(n ** 0.5) + 1, 2):  # Check odd numbers up to sqrt(n)
+        if n % i == 0:
+            return False
+    return True
+
+
+def print_primes_skip_7():
+    prime_numbers = [num for num in range(1, 51) if is_prime(num) and num % 7 != 0]
+    print("Prime numbers skipping multiples of 7:", prime_numbers)
+
+
+def my_function():
+    try:
+        choose = int(input("Enter any choice between 1 and 3: "))
+        match choose:
+            case 1:
+                print(characters('c,d,f,a,b,e,g,i,h'))  # Function call
+            case 2:
+                print(isLongerThan('Mohale'))  # Function call to isLongerThan
+            case 3:
+                print(is_prime(12))  # Function call to is_prime
+            case _:
+                print("Invalid choice")
+    except ValueError:
+        print("Please enter a valid number between 1 and 3.")
+
+
+# Run the function
+my_function()'''
+
+#While loop
+'''a = 2
+while a < 8:
+    print(a)
+    a += 1'''
+
+#While loop using break
+
+'''i = 1 
+while i < 7:
+    print(i)
+    if i == 4:
+        break
+    i += 1 '''
+
+#While loop using continue
+
+'''num = 0 
+while num < 6:
+    num += 1
+    if num == 4:
+        continue
+    print(num)'''
+
+#While loop using else
+
+'''m = 1 
+while m < 6:
+    print(m)
+    m += 1
+else:
+    print('m is no longer less than 6')'''
+
+#For loop
+
+'''fruits = ['apple', 'banana', 'cherry']
+for m in fruits:
+    print(m)'''
+
+#For loop using break
+
+'''music = ['hip hop', 'jazz', 'pop', 'rock']
+for m in music:
+    print(m)
+    if m == 'pop':
+        break'''
+
+#For loop using break
+
+'''music = ['hip hop', 'jazz', 'pop', 'rock']
+for m in music:
+    if m == 'pop':
+        break
+    print(m)'''
+
+#For loop using continue
+
+'''colors = ['red', 'blue', 'green', 'yellow']
+for c in colors:
+    if c == 'blue': # Skip blue
+        continue
+    print(c)'''
+
+#For loop using range
+'''for x in range(2,30,3):
+    print(x)'''
+
+#For loop using else
+'''for m in range(6): 
+    print(m)
+else:
+    print('finally finished!')'''
+
+#Break the loop when x is 3 using for loop and else   
+'''for x in range(6):
+    if x == 3:
+        break
+    print(x)
+else:
+    print('Finally finished!')'''
+
+# Nested loops
+
+'''adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for m in adj:
+    for n in fruits:
+        print(m, n)'''
+
+# The pass statement
+'''for a in [0, 1, 2, 3, 4]:
+    pass'''
+#having an empty for loop  like this, would raise an error without the pass statement
+
+#Functions
+#Calling a function
+'''def my_function():
+    print("Hello from a function")
+my_function()'''
+
+'''def my_func(fname, lname):
+    print(fname + " Refsnes " + lname)
+
+my_func("Emil", "Line")
+my_func("Tobias", "Speed")
+my_func("Linus", "Doom")
+'''
+
+#Number of Arguments
+'''def func(fname, lname):
+    print(fname + " " + lname)
+
+func('Emil', 'Refsnes') '''
+
+#Arbitrary Arguments, *args
+
+'''def func(*kids):
+    print("The youngest child is " + kids[0])
+func('Mohale', 'Thebe', 'Mpho')'''
+
+#Keyword Arguments
+
+'''def fuc(child3,child2,child1):
+    print('The youngest child is ' + child3)
+fuc(child1 = "Mohale", child2 = "Naleli", child3 = "Lineo")'''
+
+#Return Values
+
+'''def my_func(x):
+    return 5 * x
+    
+print(my_func(3))
+print(my_func(5))
+print(my_func(2))'''
+
+# Postional- Only Arguments
+
+'''def fug(x, /):
+    print(x)
+
+fug(3)'''
+
+# keyword - Only Arguments
+
+'''def hub (*,x):
+    print(x)
+hub(x = 3)''' 
+# Same as postional 
+
+#Lambda
+
+'''x = lambda a, b, c: a + b + c
+print(x(5, 6, 5))'''
+
+'''def myfunc(n):
+    return lambda a: a * n
+
+auro = myfunc(3)
+mola = myfunc(5)
+
+print(auro(11))
+print(mola(11))
+'''
