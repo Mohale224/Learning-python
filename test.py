@@ -778,3 +778,128 @@ mola = myfunc(5)
 print(auro(11))
 print(mola(11))
 '''
+#Access the Elements of an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+
+x = cars[0]
+
+print(x)'''
+
+#Modify the First Element of an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+
+cars[0] = 'Toyota'
+
+print(cars)'''
+
+#length of an array
+'''cars = ['Ford', 'Volvo', 'BMW']
+
+x = len(cars)
+
+print(x)'''
+
+# Looping Through an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+
+for x in cars:
+    print(x)'''
+
+#Adding an Element to an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW']
+
+cars.append('Honda')
+
+print(cars)'''
+
+#Removing an Element from an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Honda']
+
+cars.pop(1)
+
+print(cars)'''
+
+#Removing an Element from an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Honda']
+
+cars.remove('Volvo')
+
+print(cars)'''
+
+#Sorting an Array
+
+'''cars = ['Ford', 'Volvo', 'BMW', 'Honda']
+
+cars.sort()
+
+print(cars)'''
+
+#Python Classes/Objects 
+
+'''class MyClass:
+    x = 5 
+
+p1 = MyClass()
+print(p1.x)'''
+
+#The __init__() Function
+
+'''class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+p1 = Person("John", 25)
+
+print(p1.name)
+print(p1.age)'''
+
+# The __str__() Function
+
+'''class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name} ({self.age})"
+
+p2 = Person('Mohale', 20)
+
+print(p2)'''
+
+#Object Methods
+
+'''class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
+p1 = Person('Mohale', 20)
+p1.myfunc()'''
+
+#Self Parameter
+
+'''class Person:
+    def __init__(mysillyobject, name, age):
+        mysillyobject.name = name
+        mysillyobject.age = age
+
+    def myfunc(abc):
+        print('Hello my name is ' + abc.name)
+
+p1 = Person('Mohale', 20)
+p1.myfunc()'''
+
+topic = ['Maths', 'English', 'Sesotho']
+topic.pop(2)
+print(topic)
