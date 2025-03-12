@@ -887,7 +887,7 @@ print(p2)'''
 p1 = Person('Mohale', 20)
 p1.myfunc()'''
 
-#Self Parameter
+#Class Attributes
 
 '''class Person:
     def __init__(mysillyobject, name, age):
@@ -900,6 +900,170 @@ p1.myfunc()'''
 p1 = Person('Mohale', 20)
 p1.myfunc()'''
 
-topic = ['Maths', 'English', 'Sesotho']
+'''topic = ['Maths', 'English', 'Sesotho']
 topic.pop(2)
-print(topic)
+print(topic)'''
+
+#Recursion
+
+'''def factorial(num):
+    call_stack = []
+    if num == 1:
+        print('base case reached Num is 1.')
+        return 1
+    else:
+        call_stack.append({'input': num})
+        print('call stack: ', call_stack )
+        return num * factorial(num - 1)
+
+factorial(5)'''
+
+#Class
+'''class Num: # Create a class named Num
+    x = 5
+
+p1 = Num() # Create an object named p1
+print(p1.x)'''
+
+# Class
+
+'''class Person:
+    def __init__(log, name, age):
+        log.name = name
+        log.age = age
+
+p1 = Person ('Mohale', 20)
+
+print(p1.name)
+print(p1.age)
+
+#Output (Mohale 20)'''
+
+#Class
+
+'''class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+p1 = Person('Mohale', 20)
+
+print(p1)'''
+
+# __str__ method
+
+'''class Name:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):  # the string representation of an object with the __str__ function
+        return f"{self.name} ({self.age})"
+    
+p1 = Name('Tumelo', 23)
+
+print(p1)'''
+
+# class Person
+'''class Name:  
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age 
+
+    def func(self):
+        print('Hello I am ' + self.name)
+        print ('I am ' + str(self.age) + ' years old')
+
+p1 = Name('Mohale', 20)
+p1.func()'''
+
+# Self Parameter
+
+'''class Person:
+    def __init__(boy, name, age):
+        boy.name = name
+        boy.age = age
+
+    def fun(abc):
+        print('Hello I am ' + abc.name)
+
+p1 = Person('Mohale', 20)
+p1.fun()'''
+
+#Modify Object Properties
+
+'''class Motho:
+    def __init__(mize, name, age):
+        mize.name = name
+        mize.age = age
+
+    def show(self):
+        print('Hello my name is ' + self.name)
+
+p1 = Motho('Mohale', 20)
+p1.age = 21
+
+print(p1.age)'''
+'''print(p1.name)'''
+
+#Delete Object Properties
+'''def fact(num):
+    call_stack = []
+    if num == 1:
+        print('base case reached ! Num is 1')
+        return 1
+    else:
+        call_stack.append({'input': num})
+        print('call stack: ', call_stack)
+        return num * fact(num-1)
+    
+    
+fact(5) '''
+
+#Lambda
+
+'''add = lambda a, b: a+b
+print(add(3,5))
+
+greeting = lambda name: f'Hello, {name}!'
+print(greeting('Alice'))'''
+
+# Using map()
+
+'''numbers = [1,2,3,4,5,6]
+
+squared = list(map(lambda x: x ** 2, numbers))
+
+print(squared)'''
+
+# Lambda filter() even numbers
+
+'''numbers = [1,2,3,4,5,6,7,8,9,10]
+
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+
+print(even_numbers)'''
+
+# Sorted
+
+'''students = [('Alice','A',15), ('Bob','B', 16), ('Katleho','T', 10)]
+
+sorted_student = sorted(students, key=lambda x: x [2])
+
+print(sorted_student)
+'''
+
+'''numbers = [1,2,3,4,5,6,7,8,9,10]
+
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+squares = list(map(lambda x: x ** 2, numbers))
+
+print('Original numbers:', numbers)
+print('Even numbers:', evens)
+print('Square numbers;', squares)
+'''
+
+
+
+
