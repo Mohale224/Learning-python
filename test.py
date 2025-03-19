@@ -1066,4 +1066,70 @@ print('Square numbers;', squares)
 
 
 
+    # Destructor
+'''class Schedule:
+    def __init__(self, course):
+        self.course = course
+
+    def __del__(self):
+        print('Mohale has been deleted')
+
+schedule = Schedule('Maths')
+
+del schedule
+'''
+# Tsedy Tlo bone 
+'''import time
+
+class Schedule:
+    def __init__(self, course):
+        self.course = course
+
+    def __del__(self):
+        print('Maths has been deleted')
+
+# Create an instance of Schedule
+schedule = Schedule('Maths')
+
+# Print details before deletion
+print(f'Course: {schedule.course}')
+
+# Wait for a few seconds before deleting (optional)
+time.sleep(5)
+
+# Delete the object
+del schedule
+'''
+#Protected Access Modifier
+
+'''class ClassSchedule:
+    def __init__(self, course, instructor):
+        self._course = course  # protected attribute
+        self._indtructor = instructor  # protected attribute
+        
+    def display(self):
+        print(f'Course: {self._course}, Instructor: {self._indtructor}')
+
+schedule = ClassSchedule('Maths', 'Tumelo')
+schedule.display()'''
+
+'''class ClassSchedule:
+    def __init__(self, course, intructor):
+        self.__course = course  # private attribute
+        self.__instructor = intructor  # private attribute
+
+    def display_course(self):
+        
+        print(f'Course: {self.__course}, Instructor: {self.__instructor}')
+
+sched = ClassSchedule('Sesotho', 'Mampheteng')
+
+sched.display_course()'''
+
+'''movies=['Avatar', 'Titanic', 'Alien']
+movies.append('Star Wars')
+movies.insert(2, "The Matrix")
+
+print(movies[3])'''
+
 
