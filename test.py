@@ -1132,4 +1132,48 @@ movies.insert(2, "The Matrix")
 
 print(movies[3])'''
 
+'''m = Tsedy is rude she only likes it when things are done her way
+print(m[::-1])'''
+
+'''m = "Tsedy is nice she only likes it when things are done her way"
+print(m.replace('s', 'm'))
+print(m.count('s'))'''
+
+'''m1 = "Tsedy is "
+m2 = "rude"
+m3 = m1 + m2
+print(m3)'''
+#String Formatting
+#Format()
+
+'''meg1 = 'Fred scored {} out of {} points.'
+meg1. format(10, 20)
+
+meg2 = 'Fred {verb} a {adjective} {noun}.'
+
+
+print(meg1.format(10, 20))
+print(meg2.format(verb='ate', adjective='big', noun='pizza'))'''
+
+# String Interpolation
+'''text1 = '...+...lemons and limes...-...'
+
+print(text1.strip('.+-'))'''
+
+#String Method .title()
+
+'''my= 'dark knight rises'
+print(my.title())''' # Output: Dark Knight Rises
+
+#String Method .split()
+
+'''my = 'dark knight rises'
+print(my.split('i'))'''
+
+#String Method .find()
+
+'''my = 'dark knight rises'
+print(my.find('a'))'''
+
+#Striing .replace()
 

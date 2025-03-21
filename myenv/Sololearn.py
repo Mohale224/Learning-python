@@ -233,3 +233,45 @@ print(dishes[0])
 print(guests[0])
 '''
 
+'''car = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'year': 1964
+
+}
+print(car['brand'])
+print(car['model'])
+print(car['year'])'''
+
+'''contact = {
+    'name': 'John',
+    'company': 'Google'
+}
+
+print(contact['company'])'''
+
+'''contact = {
+    'name': 'John',
+    'company': 'Google'
+}
+info_keys = contact.keys()
+info_values = contact.values()
+
+print(info_keys)
+print(info_values)'''
+
+'''car = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+}
+info = car.items()
+print(info)'''
+
+user = {
+    'name': 'John',
+    'age': 25,
+}
+user['age'] = 26
+
+print(user['age'])
+print(user.items())
