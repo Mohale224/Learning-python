@@ -267,11 +267,48 @@ print(info_values)'''
 info = car.items()
 print(info)'''
 
-user = {
+'''user = {
     'name': 'John',
     'age': 25,
 }
 user['age'] = 26
 
 print(user['age'])
-print(user.items())
+print(user.items())'''
+
+# Iterating Over a Dictionary and printing the values
+'''car = {
+    'brand': 'Ford',
+    'model': 'Mustang',
+    'color': 'red'
+}
+for i in car.values():
+    print(i)'''
+
+# Iterating Over a Dictionary and printing the keys
+'''nums = []
+
+for x in range(1,51):
+    nums.append(x)
+
+print(nums)'''
+
+# Iterating Over a Dictionary and printing numbers from 1 to 50
+'''nums = [x*2 for x in range(1,51)]
+print(nums)'''
+
+'''tags = ['travel', 'vacation', 'journey']
+
+hashtags = ['#' + x for x in tags ]
+print(hashtags)'''
+
+'''users = [68,74,89,64,85,93]
+group = [x for x in users if x > 80]
+
+print(group)'''
+
+'''set1 = {'pen','book', 'pencil'}
+set2 = {'eraser', 'book'}
+unique = set1.difference(set2)
+print(unique)'''
+

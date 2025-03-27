@@ -49,8 +49,7 @@ class StudentManagement:
 
 
 def main():
-    sms = StudentManagement()
-
+    sms = StudentManagement()+
     while True:
         print("\nStudent Management System")
         print("1. Add a new Student")
